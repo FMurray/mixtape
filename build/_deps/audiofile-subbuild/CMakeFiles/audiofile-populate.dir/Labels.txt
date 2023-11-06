@@ -1,0 +1,14 @@
+# Target labels
+ audiofile-populate
+# Source files and their labels
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/audiofile-populate
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/audiofile-populate.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/audiofile-populate-complete.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-build.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-configure.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-download.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-install.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-mkdir.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-patch.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-test.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-update.rule

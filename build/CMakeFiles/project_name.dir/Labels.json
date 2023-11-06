@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/project_name"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/project_name.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/project_name-complete.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-build.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-configure.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-download.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-install.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-mkdir.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-patch.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-test.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"project_name"
+		],
+		"name" : "project_name"
+	}
+}

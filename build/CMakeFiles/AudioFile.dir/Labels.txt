@@ -1,0 +1,13 @@
+# Target labels
+ AudioFile
+# Source files and their labels
+/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/AudioFile
+/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/AudioFile.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/AudioFile-complete.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-build.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-configure.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-download.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-install.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-mkdir.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-patch.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-update.rule

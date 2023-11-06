@@ -1,0 +1,11 @@
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/CMakeFiles/test.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/CMakeFiles/edit_cache.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/CMakeFiles/rebuild_cache.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/examples/CMakeFiles/Examples.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/examples/CMakeFiles/test.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/examples/CMakeFiles/edit_cache.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/examples/CMakeFiles/rebuild_cache.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/tests/CMakeFiles/Tests.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/tests/CMakeFiles/test.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/tests/CMakeFiles/edit_cache.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-build/tests/CMakeFiles/rebuild_cache.dir

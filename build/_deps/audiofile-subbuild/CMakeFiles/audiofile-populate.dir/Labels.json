@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/audiofile-populate"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/audiofile-populate.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/audiofile-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-build.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-download.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-install.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-test.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/audiofile-populate-prefix/src/audiofile-populate-stamp/audiofile-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"audiofile-populate"
+		],
+		"name" : "audiofile-populate"
+	}
+}

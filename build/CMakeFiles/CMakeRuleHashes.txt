@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+72148176aca46e34045071a4b1e2e226 AudioFile-prefix/src/AudioFile-stamp/AudioFile-build
+08cac43aaefa818468e3932c7453fbe3 AudioFile-prefix/src/AudioFile-stamp/AudioFile-configure
+34d93999f141cf0c8de03e95bfe77abb AudioFile-prefix/src/AudioFile-stamp/AudioFile-download
+2b8b639b072e48ff77fc7f0c37b293be AudioFile-prefix/src/AudioFile-stamp/AudioFile-install
+f4f8c0192d60df4a07238ba840ef10bb AudioFile-prefix/src/AudioFile-stamp/AudioFile-mkdir
+ca300f18d5086efb018cc9a83ee2e297 AudioFile-prefix/src/AudioFile-stamp/AudioFile-patch
+5be8e728856d50c307cc3cb14199741a AudioFile-prefix/src/AudioFile-stamp/AudioFile-test
+a3098b89b2c58256e53d58bb45a31536 CMakeFiles/AudioFile-complete
+0a22122ae6269d9665f4dafea0636110 kfr/CMakeFiles/uninstall

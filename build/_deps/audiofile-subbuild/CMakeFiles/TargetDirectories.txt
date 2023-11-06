@@ -1,0 +1,3 @@
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/audiofile-populate.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/edit_cache.dir
+/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build",
+  "command": "/usr/bin/clang++ -DKFR_DFT_NPo2 -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -I/Users/forrestmurray/Documents/Projects/mixtape/kfr/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -DKFR_DEBUG -faligned-allocation -mstackrealign -o CMakeFiles/mixtape.dir/src/main.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/src/main.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/src/main.cpp",
+  "output": "CMakeFiles/mixtape.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/examples",
+  "command": "/usr/bin/clang++ -DPROJECT_BINARY_DIR=\\\"/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/examples\\\" -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -o CMakeFiles/Examples.dir/examples.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/examples/examples.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/examples/examples.cpp",
+  "output": "_deps/audiofile-build/examples/CMakeFiles/Examples.dir/examples.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests",
+  "command": "/usr/bin/clang++ -DPROJECT_BINARY_DIR=\\\"/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests\\\" -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/doctest -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -o CMakeFiles/Tests.dir/main.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/main.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/main.cpp",
+  "output": "_deps/audiofile-build/tests/CMakeFiles/Tests.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests",
+  "command": "/usr/bin/clang++ -DPROJECT_BINARY_DIR=\\\"/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests\\\" -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/doctest -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -o CMakeFiles/Tests.dir/GeneralTests.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/GeneralTests.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/GeneralTests.cpp",
+  "output": "_deps/audiofile-build/tests/CMakeFiles/Tests.dir/GeneralTests.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests",
+  "command": "/usr/bin/clang++ -DPROJECT_BINARY_DIR=\\\"/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests\\\" -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/doctest -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -o CMakeFiles/Tests.dir/WavLoadingTests.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/WavLoadingTests.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/WavLoadingTests.cpp",
+  "output": "_deps/audiofile-build/tests/CMakeFiles/Tests.dir/WavLoadingTests.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests",
+  "command": "/usr/bin/clang++ -DPROJECT_BINARY_DIR=\\\"/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests\\\" -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/doctest -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -o CMakeFiles/Tests.dir/AiffLoadingTests.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/AiffLoadingTests.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/AiffLoadingTests.cpp",
+  "output": "_deps/audiofile-build/tests/CMakeFiles/Tests.dir/AiffLoadingTests.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests",
+  "command": "/usr/bin/clang++ -DPROJECT_BINARY_DIR=\\\"/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests\\\" -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/doctest -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -o CMakeFiles/Tests.dir/FileWritingTests.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/FileWritingTests.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/FileWritingTests.cpp",
+  "output": "_deps/audiofile-build/tests/CMakeFiles/Tests.dir/FileWritingTests.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests",
+  "command": "/usr/bin/clang++ -DPROJECT_BINARY_DIR=\\\"/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-build/tests\\\" -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/doctest -I/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -o CMakeFiles/Tests.dir/SampleConversionTests.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/SampleConversionTests.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/audiofile-src/tests/SampleConversionTests.cpp",
+  "output": "_deps/audiofile-build/tests/CMakeFiles/Tests.dir/SampleConversionTests.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/kfr",
+  "command": "/usr/bin/clang++ -DKFR_DFT_NPo2 -I/Users/forrestmurray/Documents/Projects/mixtape/kfr/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -ffp-contract=fast -DKFR_DEBUG -faligned-allocation -mstackrealign -o CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/convolution-impl.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/convolution-impl.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/convolution-impl.cpp",
+  "output": "kfr/CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/convolution-impl.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/kfr",
+  "command": "/usr/bin/clang++ -DKFR_DFT_NPo2 -I/Users/forrestmurray/Documents/Projects/mixtape/kfr/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -ffp-contract=fast -DKFR_DEBUG -faligned-allocation -mstackrealign -o CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/dft-impl-f32.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/dft-impl-f32.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/dft-impl-f32.cpp",
+  "output": "kfr/CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/dft-impl-f32.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/kfr",
+  "command": "/usr/bin/clang++ -DKFR_DFT_NPo2 -I/Users/forrestmurray/Documents/Projects/mixtape/kfr/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -ffp-contract=fast -DKFR_DEBUG -faligned-allocation -mstackrealign -o CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/dft-impl-f64.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/dft-impl-f64.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/dft-impl-f64.cpp",
+  "output": "kfr/CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/dft-impl-f64.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/kfr",
+  "command": "/usr/bin/clang++ -DKFR_DFT_NPo2 -I/Users/forrestmurray/Documents/Projects/mixtape/kfr/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -ffp-contract=fast -DKFR_DEBUG -faligned-allocation -mstackrealign -o CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/fft-impl-f32.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/fft-impl-f32.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/fft-impl-f32.cpp",
+  "output": "kfr/CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/fft-impl-f32.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/kfr",
+  "command": "/usr/bin/clang++ -DKFR_DFT_NPo2 -I/Users/forrestmurray/Documents/Projects/mixtape/kfr/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -ffp-contract=fast -DKFR_DEBUG -faligned-allocation -mstackrealign -o CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/fft-impl-f64.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/fft-impl-f64.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/dft/impl/fft-impl-f64.cpp",
+  "output": "kfr/CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/fft-impl-f64.cpp.o"
+},
+{
+  "directory": "/Users/forrestmurray/Documents/Projects/mixtape/build/kfr",
+  "command": "/usr/bin/clang++  -I/Users/forrestmurray/Documents/Projects/mixtape/kfr/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -DKFR_DEBUG -faligned-allocation -mstackrealign -o CMakeFiles/kfr_io.dir/include/kfr/io/impl/audiofile-impl.cpp.o -c /Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/io/impl/audiofile-impl.cpp",
+  "file": "/Users/forrestmurray/Documents/Projects/mixtape/kfr/include/kfr/io/impl/audiofile-impl.cpp",
+  "output": "kfr/CMakeFiles/kfr_io.dir/include/kfr/io/impl/audiofile-impl.cpp.o"
+}
+]

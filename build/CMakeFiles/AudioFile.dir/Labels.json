@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/AudioFile"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/AudioFile.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/AudioFile-complete.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-build.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-configure.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-download.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-install.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-mkdir.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-patch.rule"
+		},
+		{
+			"file" : "/Users/forrestmurray/Documents/Projects/mixtape/build/AudioFile-prefix/src/AudioFile-stamp/AudioFile-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"AudioFile"
+		],
+		"name" : "AudioFile"
+	}
+}

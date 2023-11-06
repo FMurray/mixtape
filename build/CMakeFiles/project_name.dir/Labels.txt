@@ -1,0 +1,14 @@
+# Target labels
+ project_name
+# Source files and their labels
+/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/project_name
+/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/project_name.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/project_name-complete.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-build.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-configure.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-download.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-install.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-mkdir.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-patch.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-test.rule
+/Users/forrestmurray/Documents/Projects/mixtape/build/project_name-prefix/src/project_name-stamp/project_name-update.rule
