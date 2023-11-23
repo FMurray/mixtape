@@ -44,6 +44,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/cpr-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/httplib-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/forrestmurray/Documents/Projects/mixtape/build/_deps/yaml-cpp-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/forrestmurray/Documents/Projects/mixtape/build/kfr/cmake_install.cmake")
 endif()
 

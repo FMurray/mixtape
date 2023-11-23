@@ -1,0 +1,4 @@
+spotify:
+  client_id: "e49fc03213cb41669c634d9aec764f39"
+  client_secret: "89f7063a47aa4c59912221e7001b3e27"
+  redirect_uri: "http://localhost:3000"

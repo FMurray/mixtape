@@ -9,7 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/fft-impl-f32.cpp.o.d"
   "CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/fft-impl-f64.cpp.o"
   "CMakeFiles/kfr_dft.dir/include/kfr/dft/impl/fft-impl-f64.cpp.o.d"
-  "libkfr_dft.a"
+  "libkfr_dft.dylib"
   "libkfr_dft.pdb"
 )
 

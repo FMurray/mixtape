@@ -1,2 +1,1 @@
-/usr/bin/ar qc libkfr_io.a "CMakeFiles/kfr_io.dir/include/kfr/io/impl/audiofile-impl.cpp.o"
-/usr/bin/ranlib libkfr_io.a
+/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -dynamiclib -Wl,-headerpad_max_install_names -o libkfr_io.dylib -install_name @rpath/libkfr_io.dylib "CMakeFiles/kfr_io.dir/include/kfr/io/impl/audiofile-impl.cpp.o"  -lstdc++ -lpthread -lm 

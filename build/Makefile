@@ -158,6 +158,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -201,6 +202,110 @@ Tests/fast:
 .PHONY : Tests/fast
 
 #=============================================================================
+# Target rules for targets named zlib
+
+# Build rule for target.
+zlib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlib
+.PHONY : zlib
+
+# fast build rule for target.
+zlib/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/zlib-build/CMakeFiles/zlib.dir/build.make _deps/zlib-build/CMakeFiles/zlib.dir/build
+.PHONY : zlib/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/curl-build/CMakeFiles/uninstall.dir/build.make _deps/curl-build/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named libcurl
+
+# Build rule for target.
+libcurl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libcurl
+.PHONY : libcurl
+
+# fast build rule for target.
+libcurl/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/curl-build/lib/CMakeFiles/libcurl.dir/build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/build
+.PHONY : libcurl/fast
+
+#=============================================================================
+# Target rules for targets named cpr
+
+# Build rule for target.
+cpr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpr
+.PHONY : cpr
+
+# fast build rule for target.
+cpr/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpr-build/cpr/CMakeFiles/cpr.dir/build.make _deps/cpr-build/cpr/CMakeFiles/cpr.dir/build
+.PHONY : cpr/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp
+
+# Build rule for target.
+yaml-cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp
+.PHONY : yaml-cpp
+
+# fast build rule for target.
+yaml-cpp/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build
+.PHONY : yaml-cpp/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp-sandbox
+
+# Build rule for target.
+yaml-cpp-sandbox: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-sandbox
+.PHONY : yaml-cpp-sandbox
+
+# fast build rule for target.
+yaml-cpp-sandbox/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build
+.PHONY : yaml-cpp-sandbox/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp-parse
+
+# Build rule for target.
+yaml-cpp-parse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-parse
+.PHONY : yaml-cpp-parse
+
+# fast build rule for target.
+yaml-cpp-parse/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build
+.PHONY : yaml-cpp-parse/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp-read
+
+# Build rule for target.
+yaml-cpp-read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-read
+.PHONY : yaml-cpp-read
+
+# fast build rule for target.
+yaml-cpp-read/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build
+.PHONY : yaml-cpp-read/fast
+
+#=============================================================================
 # Target rules for targets named kfr_dft
 
 # Build rule for target.
@@ -225,19 +330,6 @@ kfr_io: cmake_check_build_system
 kfr_io/fast:
 	$(MAKE) $(MAKESILENT) -f kfr/CMakeFiles/kfr_io.dir/build.make kfr/CMakeFiles/kfr_io.dir/build
 .PHONY : kfr_io/fast
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f kfr/CMakeFiles/uninstall.dir/build.make kfr/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -278,9 +370,16 @@ help:
 	@echo "... uninstall"
 	@echo "... Examples"
 	@echo "... Tests"
+	@echo "... cpr"
 	@echo "... kfr_dft"
 	@echo "... kfr_io"
+	@echo "... libcurl"
 	@echo "... mixtape"
+	@echo "... yaml-cpp"
+	@echo "... yaml-cpp-parse"
+	@echo "... yaml-cpp-read"
+	@echo "... yaml-cpp-sandbox"
+	@echo "... zlib"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -295,6 +394,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

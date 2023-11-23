@@ -72,6 +72,17 @@
     "concepts": "cpp",
     "algorithm": "cpp",
     "numeric": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "any": "cpp",
+    "condition_variable": "cpp",
+    "forward_list": "cpp",
+    "future": "cpp",
+    "list": "cpp",
+    "queue": "cpp",
+    "regex": "cpp",
+    "span": "cpp",
+    "thread": "cpp",
+    "valarray": "cpp",
+    "ranges": "cpp"
   }
 }

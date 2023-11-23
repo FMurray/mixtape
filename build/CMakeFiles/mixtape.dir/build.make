@@ -92,8 +92,15 @@ mixtape_EXTERNAL_OBJECTS =
 
 mixtape: CMakeFiles/mixtape.dir/src/main.cpp.o
 mixtape: CMakeFiles/mixtape.dir/build.make
-mixtape: kfr/libkfr_io.a
-mixtape: kfr/libkfr_dft.a
+mixtape: kfr/libkfr_io.dylib
+mixtape: kfr/libkfr_dft.dylib
+mixtape: _deps/cpr-build/cpr/libcpr.1.9.0.dylib
+mixtape: _deps/yaml-cpp-build/libyaml-cppd.0.8.0.dylib
+mixtape: _deps/curl-build/lib/libcurl-d.dylib
+mixtape: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd
+mixtape: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd
+mixtape: /opt/homebrew/Cellar/openssl@3/3.1.2/lib/libssl.dylib
+mixtape: /opt/homebrew/Cellar/openssl@3/3.1.2/lib/libcrypto.dylib
 mixtape: CMakeFiles/mixtape.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mixtape"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mixtape.dir/link.txt --verbose=$(VERBOSE)

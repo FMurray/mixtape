@@ -158,6 +158,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	cd /Users/forrestmurray/Documents/Projects/mixtape/build && $(CMAKE_COMMAND) -P /Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/VerifyGlobs.cmake
 	cd /Users/forrestmurray/Documents/Projects/mixtape/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -188,20 +189,6 @@ kfr_io: kfr/CMakeFiles/kfr_io.dir/rule
 kfr_io/fast:
 	cd /Users/forrestmurray/Documents/Projects/mixtape/build && $(MAKE) $(MAKESILENT) -f kfr/CMakeFiles/kfr_io.dir/build.make kfr/CMakeFiles/kfr_io.dir/build
 .PHONY : kfr_io/fast
-
-# Convenience name for target.
-kfr/CMakeFiles/uninstall.dir/rule:
-	cd /Users/forrestmurray/Documents/Projects/mixtape/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kfr/CMakeFiles/uninstall.dir/rule
-.PHONY : kfr/CMakeFiles/uninstall.dir/rule
-
-# Convenience name for target.
-uninstall: kfr/CMakeFiles/uninstall.dir/rule
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	cd /Users/forrestmurray/Documents/Projects/mixtape/build && $(MAKE) $(MAKESILENT) -f kfr/CMakeFiles/uninstall.dir/build.make kfr/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
 
 include/kfr/dft/impl/convolution-impl.o: include/kfr/dft/impl/convolution-impl.cpp.o
 .PHONY : include/kfr/dft/impl/convolution-impl.o
@@ -359,7 +346,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... uninstall"
 	@echo "... kfr_dft"
 	@echo "... kfr_io"
 	@echo "... include/kfr/dft/impl/convolution-impl.o"
@@ -391,6 +377,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	cd /Users/forrestmurray/Documents/Projects/mixtape/build && $(CMAKE_COMMAND) -P /Users/forrestmurray/Documents/Projects/mixtape/build/CMakeFiles/VerifyGlobs.cmake
 	cd /Users/forrestmurray/Documents/Projects/mixtape/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

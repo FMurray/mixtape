@@ -6,10 +6,19 @@
 #include <fstream>
 #include <vector>
 #include <limits>
+#include <thread>
 
 #include <AudioFile.h>
 #include "kfr/all.hpp"
+#include <nlohmann/json.hpp> // Include the JSON library
+#include <cpr/cpr.h>
+#include <httplib.h>
 
+#include "utils.h"
+#include "spotify.h"
+#include "server.h"
+
+using json = nlohmann::json;
 using namespace kfr;
 using namespace std;
 
@@ -19,42 +28,8 @@ const double duration = 0.1;  // Duration of each bit in seconds
 const float freqOne = 440.f;  // Frequency for binary '1'
 const float freqZero = 880.f; // Frequency for binary '0'
 const double PI = 3.14159265358979323846;
-
-// Function to convert a string to a vector of bools representing binary data
-std::vector<bool> stringToBinary(const std::string &text)
-{
-  std::vector<bool> binaryData;
-
-  for (char c : text)
-  {
-    std::bitset<8> charBits(c);
-    // Push each bit of the character into the vector, MSB first
-    for (int i = 7; i >= 0; --i)
-    {
-      binaryData.push_back(charBits.test(i));
-    }
-  }
-
-  return binaryData;
-}
-
-std::string binaryToString(const std::vector<bool> binaryData)
-{
-  std::string text;
-
-  for (size_t i = 0; i < binaryData.size(); i += 8)
-  {
-    std::bitset<8> charBits;
-    // Read each bit of the character from the vector, MSB first
-    for (int j = 7; j >= 0; --j)
-    {
-      charBits[j] = binaryData[i + (7 - j)];
-    }
-    text += static_cast<char>(charBits.to_ulong());
-  }
-
-  return text;
-}
+const int bitsPerSecond = 500; // This is the baud rate
+const float frequencyThreshold = 200.0;
 
 // Function to generate FSK signal
 void writeFSKSignal(const std::vector<bool> &data, const std::string &filePath)
@@ -65,7 +40,6 @@ void writeFSKSignal(const std::vector<bool> &data, const std::string &filePath)
   const float sampleRate = 44100.f;
   const float freqOne = 440.f;  // Frequency for binary '1'
   const float freqZero = 880.f; // Frequency for binary '0'
-  const int bitsPerSecond = 10; // This is the baud rate
   const int samplesPerBit = sampleRate / bitsPerSecond;
 
   // Set the number of samples per channel based on data length and baud rate
@@ -128,8 +102,8 @@ std::vector<bool> readWavFileAndDecodeFSK(const std::string &filePath)
   // Assume audio file is mono for simplicity
   const auto &samples = audio[0];
 
-  const int sampleRate = 44100; // Your actual sample rate
-  const int baudRate = 10;      // Your actual baud rate
+  const int sampleRate = 44100;       // Your actual sample rate
+  const int baudRate = bitsPerSecond; // Your actual baud rate
   const int samplesPerSymbol = sampleRate / baudRate;
   const int numSymbols = samples.size() / samplesPerSymbol;
 
@@ -159,17 +133,35 @@ std::vector<bool> readWavFileAndDecodeFSK(const std::string &filePath)
     // Calculate the frequency of the dominant peak
     double dominantFrequency = (maxIndex * sampleRate) / samplesPerSymbol;
 
-    if (dominantFrequency == freqOne)
+    println("Dominant frequency: ", dominantFrequency);
+    println(abs(dominantFrequency - freqOne));
+    println(abs(dominantFrequency - freqZero));
+
+    // if (dominantFrequency == freqOne)
+    // {
+    //   binaryData.push_back(true);
+    // }
+    // else if (dominantFrequency == freqZero)
+    // {
+    //   binaryData.push_back(false);
+    // }
+    // else
+    // {
+    //   // Error
+    // }
+
+    // Handling potential errors or noise
+    if (abs(dominantFrequency - freqOne) < frequencyThreshold)
     {
       binaryData.push_back(true);
     }
-    else if (dominantFrequency == freqZero)
+    else if (abs(dominantFrequency - freqZero) < frequencyThreshold)
     {
       binaryData.push_back(false);
     }
     else
     {
-      // Error
+      // Handle error or noise
     }
     // Map the dominant frequency to data...
     // Your code to map frequency to the encoded data goes here
@@ -178,24 +170,111 @@ std::vector<bool> readWavFileAndDecodeFSK(const std::string &filePath)
   return binaryData;
 }
 
-int main()
+void loadConfig()
 {
-  std::string message = "Hey Dickhead";
+  YAML::Node config = YAML::LoadFile("config.yaml");
+  client_id = config["spotify"]["client_id"].as<std::string>();
+  client_secret = config["spotify"]["client_secret"].as<std::string>();
+  redirect_uri = config["spotify"]["redirect_uri"].as<std::string>();
+}
 
-  // Binary data to encode
-  std::vector<bool> data = stringToBinary(message);
+int main(int argc, char *argv[])
+{
 
-  // Output file name
-  std::string fileName = "fsk_signal.wav";
+  for (int i = 1; i < argc; ++i)
+  {
+    std::string arg = argv[i];
 
-  // Generate FSK signal
-  // writeFSKSignal(data, fileName);
+    if (arg == "--read")
+    {
+      std::string fileName = "fsk_signal.wav";
 
-  std::vector<bool> decoded = readWavFileAndDecodeFSK(fileName);
+      std::vector<bool> decoded = readWavFileAndDecodeFSK(fileName);
 
-  println("Decoded message: ", binaryToString(decoded));
+      println("Decoded message: ", binaryToString(decoded));
+      return 0;
+    }
+    else if (arg == "--another-command")
+    {
+      // Handle another command
+    }
+    // Add more else-if blocks for additional commands
+  }
 
-  // readAndPlotWav(fileName);
+  // // Sample JSON
+  // std::string jsonString = R"({"name": "John", "age": 30, "city": "New York"})";
+
+  // // Parse the JSON string
+  // json j = json::parse(jsonString);
+
+  // // Convert to binary and save to a file
+  // std::ofstream outputFile("output.bin", std::ios::binary);
+  // jsonToBinary(j, outputFile);
+
+  // try
+  // {
+  //   json j = readBinaryToJson("output.bin");
+  //   std::cout << "JSON output: " << j.dump(4) << std::endl; // Pretty print with indent of 4
+  // }
+  // catch (const std::exception &e)
+  // {
+  //   std::cerr << "Error: " << e.what() << std::endl;
+  // }
+
+  loadConfig();
+
+  httplib::Server svr;
+  std::thread serverThread(runServer, std::ref(svr));
+
+  std::string auth_url = "https://accounts.spotify.com/authorize?client_id=" + client_id +
+                         "&response_type=code&redirect_uri=" + redirect_uri +
+                         "&scope=user-read-private user-read-email user-top-read"; // Add other scopes as needed
+
+  std::cout << "Please open the following URL in your browser and authorize:\n"
+            << auth_url << std::endl;
+
+  // if (readToken().empty())
+  // {
+  //   std::string auth_url = "https://accounts.spotify.com/authorize?client_id=" + client_id +
+  //                          "&response_type=code&redirect_uri=" + redirect_uri +
+  //                          "&scope=user-read-private user-read-email user-top-read"; // Add other scopes as needed
+
+  //   std::cout << "Please open the following URL in your browser and authorize:\n"
+  //             << auth_url << std::endl;
+  // }
+  // else
+  // {
+  //   std::cout << "Saved refresh token found. Using it to get a new access token." << std::endl;
+  //   json accessTokenJson = getAccessToken(readToken(), client_id, client_secret, redirect_uri);
+  //   std::cout << "Access token JSON: " << accessTokenJson << std::endl;
+  // }
+
+  serverThread.join();
+
+  try
+  {
+    json playlists = getPlaylists();
+    displayPlaylists(playlists);
+
+    int choice = getUserPlaylistChoice(playlists.size());
+    std::cout << "You selected playlist number: " << choice << std::endl;
+    json selectedPlaylist = playlists[choice - 1];
+    std::cout << "Selected playlist JSON: " << selectedPlaylist << std::endl;
+
+    json playlistItems = getPlaylistItems(selectedPlaylist);
+    displayPlaylistItems(playlistItems);
+    std::vector<bool> data = stringToBinary(playlistItems.dump());
+    // std::vector<bool> data = stringToBinary(getPlaylistTrackNames(playlistItems)[0]);
+
+    std::string fileName = "fsk_signal.wav";
+    writeFSKSignal(data, fileName);
+  }
+  catch (const std::exception &e)
+  {
+    std::cerr << "Error: " << e.what() << std::endl;
+  }
+
+  // // readAndPlotWav(fileName);
 
   return 0;
 }

@@ -7,4 +7,4 @@ f4f8c0192d60df4a07238ba840ef10bb AudioFile-prefix/src/AudioFile-stamp/AudioFile-
 ca300f18d5086efb018cc9a83ee2e297 AudioFile-prefix/src/AudioFile-stamp/AudioFile-patch
 5be8e728856d50c307cc3cb14199741a AudioFile-prefix/src/AudioFile-stamp/AudioFile-test
 a3098b89b2c58256e53d58bb45a31536 CMakeFiles/AudioFile-complete
-0a22122ae6269d9665f4dafea0636110 kfr/CMakeFiles/uninstall
+2ec68cae6466cf5f8950d669e0b290a0 _deps/curl-build/CMakeFiles/uninstall
